@@ -1,0 +1,19 @@
+
+.product-details-page {
+  padding: 30px;
+}
+
+.product-details {
+  display: flex;
+  gap: 40px;
+}
+
+.product-right {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+  }
+}

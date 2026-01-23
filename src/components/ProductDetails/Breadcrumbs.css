@@ -1,0 +1,32 @@
+.breadcrumbs {
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs span {
+  color: #999;
+}
+
+.breadcrumb-category {
+ color: #666; 
+ font-weight: 500;
+ cursor: default;
+}
+
+.breadcrumb-current {
+  color: #111;
+  font-weight: 600;
+}

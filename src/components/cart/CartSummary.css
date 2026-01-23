@@ -1,0 +1,14 @@
+.cart-summary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart-summary h3 {
+  margin-bottom: 15px;
+}
+
+.cart-summary .total {
+  font-size: 18px;
+  margin-top: 10px;
+}

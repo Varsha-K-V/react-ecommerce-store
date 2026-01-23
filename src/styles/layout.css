@@ -1,0 +1,105 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #fff;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-bottom: 1px solid #eee;
+}
+.header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.cart-count{
+    background: #ff4d4f;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 6px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.logo span{
+    color: #ff4d4f;
+}
+.nav-link{
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: all 0.2s ease;
+    margin-left: 24px;
+    
+}
+.nav-link.active{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.auth-btn {
+  margin-left: 16px;
+  padding: 6px 12px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.auth-btn:hover {
+  background: black;
+  color: white;
+}
+
+.logout {
+  background: black;
+  color: white;
+}
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.user-info {
+    display :flex;
+    align-items: center;
+    gap: 12px;
+}
+.username { 
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    display: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

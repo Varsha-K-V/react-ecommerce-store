@@ -1,0 +1,11 @@
+.product-image {
+  width: 100%;
+  max-width: 420px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}

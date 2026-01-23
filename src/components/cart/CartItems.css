@@ -1,0 +1,41 @@
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cart-item-info h4 {
+  margin-bottom: 6px;
+}
+
+.variants {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.qty-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}

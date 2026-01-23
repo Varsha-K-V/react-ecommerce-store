@@ -1,0 +1,53 @@
+.related-products {
+  margin-top: 50px;
+}
+
+.related-products h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.related-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.related-card p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.related-card span {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.view-details-btn {
+  padding: 6px 12px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.view-details-btn:hover {
+  background: #333;
+}
