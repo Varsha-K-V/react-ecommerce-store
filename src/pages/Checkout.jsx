@@ -1,46 +1,65 @@
+import { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import "../styles/checkout.css"
 
-function Checkout(){
-    const { cartItems, clearCart } = useCart(); 
-    const navigate = useNavigate();
+function Checkout() {
+  const { cartItems, clearCart } = useCart();
+  const navigate = useNavigate();
+  const [orderPlaced, setOrderPlaced] = useState(false);
 
-    const totalAmount = cartItems.reduce(
-        (sum,item)=>sum+item.price*item.quantity,
-        0
-    );
+  const totalAmount = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
-    return (
-        <div className="checkout-page">
-            <h2>Checkout</h2>
+  function handlePlaceOrder() {
+    clearCart();
+    setOrderPlaced(true);
 
-            {cartItems.length === 0 ? (
-                <p>Your Cart is empty.</p>
-            ) : (
-                <>
-                <h3>Order Summary</h3>
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+  }
 
-                {cartItems.map((item,index)=>(
-                    <div key={index}>
-                        <p>
-                            {item.title} * {item.quantity}
-                        </p>
-                    </div>
-                ))}
+  return (
+    <div className="checkout-page">
+      <div className="checkout-card">
+        <h2>Checkout</h2>
 
-                <h3>Total: ₹{totalAmount}</h3>
-                <button 
-                  onClick={()=>{
-                    clearCart();
-                    navigate("/");
-                  }}
-                  >
-                    Place Order
-                </button>
-                </>
-            )}
+        {orderPlaced ? (
+          <div className="order-success">
+            <h3>✅ Order Placed Successfully!</h3>
+            <p>Thank you for shopping with us.</p>
+          </div>
+        ) : cartItems.length === 0 ? (
+          <p className="empty-cart">Your cart is empty.</p>
+        ) : (
+          <>
+            <h3 className="summary-title">Order Summary</h3>
 
-        </div>
-    );
+            <div className="order-items">
+              {cartItems.map((item, index) => (
+                <div className="order-item" key={index}>
+                  <span>{item.title}</span>
+                  <span>x {item.quantity}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="checkout-total">
+              <span>Total</span>
+              <span>₹{totalAmount}</span>
+            </div>
+
+            <button className="place-order-btn" onClick={handlePlaceOrder}>
+              Place Order
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
+
 export default Checkout;

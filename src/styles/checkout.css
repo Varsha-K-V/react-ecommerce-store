@@ -1,0 +1,78 @@
+.checkout-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.checkout-card {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-title {
+  margin-bottom: 12px;
+}
+
+.order-items {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background-color: #333;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #777;
+}
+
+/* Success message */
+.order-success {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.order-success h3 {
+  color: green;
+  margin-bottom: 8px;
+}
