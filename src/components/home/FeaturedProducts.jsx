@@ -1,16 +1,26 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { fetchProducts } from "../../services/api"
 import "./FeaturedProducts.css";
 
 function FeaturedProducts(){
     const[products,setProducts] = useState([]);
     const navigate = useNavigate();
 
-    useEffect(()=>{
-        fetch("http://localhost:5000/products?featured=true")
-        .then((res)=>res.json())
-        .then((data)=>setProducts(data));
-    },[])
+    useEffect(() => {
+        const getFeaturedProducts = async () => {
+            try {
+                const allProducts = await fetchProducts();
+                // Filter featured products locally
+                const featured = allProducts.filter(product => product.featured === true);
+                setProducts(featured);
+            } catch (error) {
+                console.error("Error fetching featured products:", error);
+            }
+        };
+
+        getFeaturedProducts();
+    }, []);
 
     return (
         <section className="featured">

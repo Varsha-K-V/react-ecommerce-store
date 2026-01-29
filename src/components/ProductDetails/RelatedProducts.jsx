@@ -10,17 +10,18 @@ function RelatedProducts({category, currentProductId}){
     useEffect(()=>{
         async function loadRelated(){
             try{
-                const data = await fetchProducts();
+                const allProducts = await fetchProducts();
 
-                const related = data.filter(
-                    (product)=>
+                const related = allProducts.filter(
+                    (product) =>
                         product.category === category &&
-                    product.id !== currentProductId
+                        product.id !== currentProductId
                 );
 
                 setProducts(related);
             }catch(error){
                 console.error("Failed to load related products", error);
+                setProducts([]);
             }
         }
         loadRelated();

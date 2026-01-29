@@ -33,6 +33,7 @@ function ProductDetails(){
         async function loadProduct(){
             try{
                 const data = await fetchProductById(id);
+                if (!data) throw new Error("Product not found");
                 setProduct(data);
             }catch (err){
                 setError(err.message);

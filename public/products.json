@@ -1,0 +1,137 @@
+ [
+    {
+      "id": 1,
+      "title": "Classic Hoodie",
+      "price": 1499,
+      "category": "hoodies",
+      "colors": ["black", "grey"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "title": "Crew Neck T-Shirt",
+      "price": 699,
+      "category": "tshirts",
+      "colors": ["white", "black"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "title": "Oversized T-Shirt",
+      "price": 799,
+      "category": "tshirts",
+      "colors": ["black"],
+      "sizes": ["M", "L", "XL"],
+      "image": "/images/black-overSizedTShirt.webp",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "title": "Formal Shirt",
+      "price": 1199,
+      "category": "shirts",
+      "colors": ["white"],
+      "sizes": ["M", "L", "XL"],
+      "image": "/images/white-formal-shirt.avif",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "title": "Casual Shirt",
+      "price": 1099,
+      "category": "shirts",
+      "colors": ["blue"],
+      "sizes": ["S", "M", "L"],
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": 7,
+      "title": "Slim Fit Jeans",
+      "price": 1799,
+      "category": "jeans",
+      "colors": ["blue"],
+      "sizes": ["30", "32", "34", "36"],
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "title": "Regular Fit Jeans",
+      "price": 1699,
+      "category": "jeans",
+      "colors": ["black"],
+      "sizes": ["32", "34", "36"],
+      "image": "/images/black-regular-fit-jeans.webp",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "title": "Plain Hoodie",
+      "price": 1499,
+      "category": "hoodies",
+      "colors": ["navy"],
+      "sizes": ["S", "M", "L"],
+      "image": "/images/navy-blue_hoodie.webp",
+      "featured": true,
+      "inStock": true
+    },
+    
+    {
+      "id": 12,
+      "title": "Graphic Print T-Shirt",
+      "price": 899,
+      "category": "tshirts",
+      "colors": ["black", "red"],
+      "sizes": ["M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 13,
+      "title": "Checked Casual Shirt",
+      "price": 1299,
+      "category": "shirts",
+      "colors": ["red", "black"],
+      "sizes": ["M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1598032895397-b9472444bf93",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": 14,
+      "title": "Denim Shirt",
+      "price": 1399,
+      "category": "shirts",
+      "colors": ["blue"],
+      "sizes": ["S", "M", "L"],
+      "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": 16,
+      "title": "Light Slim Jeans",
+      "price": 1799,
+      "category": "jeans",
+      "colors": ["lightblue"],
+      "sizes": ["30", "32", "34"],
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
+      "featured": true,
+      "inStock": true
+    }
+    
+  ]
+
